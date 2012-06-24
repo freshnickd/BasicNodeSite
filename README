@@ -1,6 +1,14 @@
-hhh. and again. yes again.  t is it asking for apsswrod eachtime? more change. This is my first Node.js project and first time using GitHub. Hopefully I learn something! 
+This is my first Node.js project and first time using GitHub. Hopefully I learn something! 
 
-Adding more text so I can commit again. 
+My goal is to create a site with a login and use jQuery. I'm not a web developer so will be very rudimentary. 
 
+I am loosely basing this off of the excellent tutorial I found here: http://www.hacksparrow.com/express-js-tutorial.html
 
+Steps I've taken (will update):
 
+1) Installed node, npm, express.
+2) Created express app (express --sessions --css stylus)
+3) Created a new view (home.jade) and route (store.js) and updated app.js to use them.
+4) Edited home.jade with a basic log-in page
+5) Edited style.styl for a background color and other more interesting style
+6) Edited app.js to route the log-in post

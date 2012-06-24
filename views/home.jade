@@ -1,0 +1,15 @@
+#container
+#logo
+  img(src='/images/freshnickd.png')
+#display
+  #login
+    form(method='post')
+      | Enter your username
+      div
+        input(type='text', name='username')
+        input(type='submit', value='Log in')
+#footer
+  div Copyright &copy; freshnickd #{+new Date().getFullYear()}
+  a(href='/page?name=about') About
+  | | 
+  a(href='page?name=contact) Contact
