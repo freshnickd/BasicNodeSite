@@ -36,6 +36,19 @@ app.get('/', store.home);
 
 app.post('/', store.home_post_handler);
 
+app.get('/appointments',store.appointments);
+
+app.get('/appointment/:id',store.appointment);
+
+app.get('/page', store.page);
+
+app.get('/logout', function(req, res) {
+        // delete the session variable
+        delete req.session.username;
+        // redirect user to homepage
+        res.redirect('/');
+        });
+
 app.listen(3000, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });

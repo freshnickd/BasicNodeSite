@@ -12,3 +12,5 @@ Steps I've taken (will update):
 4) Edited home.jade with a basic log-in page
 5) Edited style.styl for a background color and other more interesting style
 6) Edited app.js to route the log-in post
+7) Added the appointments page by adding appointments.jade and appointment.jade. some modification of app.js was required
+8) 
