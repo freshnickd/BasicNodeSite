@@ -4,13 +4,14 @@ My goal is to create a site with a login and use jQuery. I'm not a web developer
 
 I am loosely basing this off of the excellent tutorial I found here: http://www.hacksparrow.com/express-js-tutorial.html
 
-Steps I've taken (will update):
+Steps I've taken:
 
-1) Installed node, npm, express.
-2) Created express app (express --sessions --css stylus)
-3) Created a new view (home.jade) and route (store.js) and updated app.js to use them.
-4) Edited home.jade with a basic log-in page
-5) Edited style.styl for a background color and other more interesting style
-6) Edited app.js to route the log-in post
-7) Added the appointments page by adding appointments.jade and appointment.jade. some modification of app.js was required
-8) 
+1. Installed node, npm, express.
+2. Created express app (express --sessions --css stylus)
+3. Created a new view (home.jade) and route (store.js) and updated app.js to use them.
+4. Edited home.jade with a basic log-in page
+5. Edited style.styl for a background color and other more interesting style
+6. Edited app.js to route the log-in post
+7. Added the appointments page by adding appointments.jade and appointment.jade. some modification of app.js was required. 
+8. Separated out footer, user bar into their own files. 
+9. Modified the calendar.js file to use query (i.e. "?") instead of params (i.e. "/"), which works better with nginx and subdirectories. 
