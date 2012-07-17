@@ -1,0 +1,12 @@
+#container
+    #logo
+        img(src='images/freshnickd.png')
+    #display
+        include userbar
+
+        -for (var id in appointments)
+            - var appointment = appointments[id]
+            div
+                a(href='appointment?id=#{id}') #{appointment.name} - #{appointment.teacher}
+                        
+    include footer

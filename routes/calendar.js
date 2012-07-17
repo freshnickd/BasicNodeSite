@@ -14,11 +14,11 @@ exports.home_post_handler = function(req, res) {
 };
 
 var appointments = {
-    SKN:{name:'Shuriken', teacher:100},
-    ASK:{name:'Ashiko', teacher:690},
-    CGI:{name:'Chigiriki', teacher:250},
-    NGT:{name:'Naginata', teacher:900},
-    KTN:{name:'Katana', teacher:1000}
+    SKN:{name:'Guitar', teacher:nick},
+    ASK:{name:'Violin', teacher:jess},
+    CGI:{name:'Piano', teacher:kim},
+    NGT:{name:'Guitar', teacher:mike},
+    KTN:{name:'Trumpet', teacher:jenn}
     
 };
 
@@ -45,8 +45,8 @@ exports.appointment = function(req, res) {
 exports.page = function(req, res) {
     var name = req.query.name;
     var contents = {
-    about: 'Ninja Store sells the coolest ninja stuff in the world. Anyone shopping here is cool.',
-    contact: 'You can contact us at <address><strong>Ninja Store</strong>,<br>1, World Ninja Headquarters,<br>Ninja Avenue,<br>NIN80B7-JP,<br>Nihongo.</address>'
+    about: 'This is my first node page.',
+    contact: 'You can contact us at <address><strong>freshnickd</strong>,<br>5 some st<br>some mail stop<br>MD</address>'
     };
-    res.render('page', { title: 'Ninja Store - ' + name, username: req.session.username, content:contents[name] });
+    res.render('page', { title: 'Appointments - ' + name, username: req.session.username, content:contents[name] });
 };

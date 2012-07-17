@@ -38,7 +38,7 @@ app.post('/', store.home_post_handler);
 
 app.get('/appointments',store.appointments);
 
-app.get('/appointment/:id',store.appointment);
+app.get('/appointment',store.appointment);
 
 app.get('/page', store.page);
 
